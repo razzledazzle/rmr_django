@@ -57,5 +57,5 @@ class RequestDecoderTestCase(django.test.TestCase, metaclass=Parametrized):
             content_type='application/json',
         )
         self.assertIsInstance(response, django.http.JsonResponse)
-        self.assertEqual(rmr.views.Json.http_code, response.status_code)
+        self.assertEqual(200, response.status_code)
         self.assertEqual(response.content.decode('utf-8'), data)
