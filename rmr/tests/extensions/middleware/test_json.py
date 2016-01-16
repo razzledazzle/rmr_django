@@ -4,8 +4,6 @@ import django.test
 from django.conf.urls import url
 from django.test.utils import override_settings
 
-import rmr.views
-
 from rmr.utils.test import data_provider, DataSet, Parametrized
 
 urlpatterns = [
